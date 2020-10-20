@@ -19,12 +19,19 @@ function LeftNav(props) {
           />
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item active">
-            <Link to="/" className="nav-links" onClick={colseMobileMenu}>
-              الفيديو الاول
-            </Link>
-          </li>
-          <li className="nav-item">
+          {props.data.map((data) => (
+            <li className="nav-item active" key={data.id}>
+              <Link
+                to={`/L/${data.id}`}
+                className="nav-links"
+                onClick={colseMobileMenu}
+              >
+                {data.title}
+              </Link>
+            </li>
+          ))}
+
+          {/* <li className="nav-item">
             <Link to="/corses" className="nav-links" onClick={colseMobileMenu}>
               الفيديو الثاني
             </Link>
@@ -38,7 +45,7 @@ function LeftNav(props) {
             <Link to="/about" className="nav-links" onClick={colseMobileMenu}>
               الفيديو الثالث
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </nav>

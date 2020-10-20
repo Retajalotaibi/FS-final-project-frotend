@@ -11,7 +11,6 @@ const ProgressCounter = (props) => {
 
     setStyle(newStyle);
   }, 1000);
-  console.log(props.done);
   return (
     <div className="progress">
       <div className="progress-done" style={style}>

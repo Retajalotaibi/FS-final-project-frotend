@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import profileImage from "./css/profile.png";
 import ProgressCounter from "./progressCounter";
+import "./css/profileSideBar.css";
 class ProfileSideBar extends Component {
   constructor(props) {
     super(props);
