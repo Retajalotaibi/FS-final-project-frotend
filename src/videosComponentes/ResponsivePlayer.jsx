@@ -89,7 +89,7 @@ const ResponsivePlayer = (props) => {
   return (
     <React.Fragment>
       <div className="player-container">
-        <h2>{data[0].title}</h2>
+        <h2 className="player-title">{data[0].title}</h2>
         <div className="player-wrapper">
           <ReactPlayer
             className="react-player"

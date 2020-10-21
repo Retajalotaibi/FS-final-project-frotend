@@ -20,6 +20,7 @@ class ProfileSideBar extends Component {
           </div>
         </div>
         <div className="progress-items-container">
+          <h2>تطورك في هذا الكورس</h2>
           <ProgressCounter done={70} />
         </div>
       </div>

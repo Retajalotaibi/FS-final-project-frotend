@@ -9,11 +9,21 @@
   align-items: center;
 }
 .profile-container {
+  position: relative;
+  left: 50px;
   /* background-color: lightpink; */
   /* display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   justify-items: left; */
+}
+.profile-container img {
+  width: 100px;
+}
+.progress-items-container {
+  padding: 20px;
+  position: relative;
+  bottom: 60px;
 }
 .cards-container {
   display: flex;

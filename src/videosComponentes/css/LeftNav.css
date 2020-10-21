@@ -27,7 +27,7 @@
   justify-self: start;
   /* margin-left: 20px; */
   position: absolute;
-  top: 40px;
+  top: 60px;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
@@ -50,7 +50,9 @@
   text-align: center;
   width: auto;
   justify-content: end;
-  margin-right: 2rem;
+  position: relative;
+  bottom: 50px;
+  margin-right: 3rem;
 }
 
 .nav-item {
@@ -58,14 +60,13 @@
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.active {
-}
 .nav-links {
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  font-size: 1.4rem;
   height: 100%;
 }
 
@@ -85,7 +86,9 @@
 .menu-icon {
   display: none;
 }
-
+.active {
+  color: #ea5151;
+}
 @media screen and (max-width: 960px) {
   .navbar {
     height: 80px;
@@ -141,8 +144,9 @@
   .navbar-logo {
     position: absolute;
     top: 0;
-    left: 0;
-
+    left: -40px;
+    right: 20px;
+    width: 300px;
     transform: translate(25%, 50%);
   }
 

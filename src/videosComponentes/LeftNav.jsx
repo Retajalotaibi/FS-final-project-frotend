@@ -23,7 +23,7 @@ function LeftNav(props) {
             <li className="nav-item active" key={data.id}>
               <Link
                 to={`/L/${data.id}`}
-                className="nav-links"
+                className="nav-links "
                 onClick={colseMobileMenu}
               >
                 {data.title}
