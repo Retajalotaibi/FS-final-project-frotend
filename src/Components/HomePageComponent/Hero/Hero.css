@@ -3,8 +3,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background: linear-gradient(
+      90deg,
+      rgb(28, 27, 27) 0%,
+      rgb(26, 23, 23) 100%
+    );
     color: white;
+    padding-top: 20px;
+    padding-bottom: 50px;
   }
   .top-hero-container {
     display: flex;
@@ -23,6 +29,8 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    width: 600px;
+    height: 450px;
   }
   .hero-header {
     font-size: 40px;
@@ -55,7 +63,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: black;
+    background: linear-gradient(
+      90deg,
+      rgb(28, 27, 27) 0%,
+      rgb(26, 23, 23) 100%
+    );
     color: white;
   }
   .top-hero-container {
@@ -111,7 +123,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: black;
+    background: linear-gradient(
+      90deg,
+      rgb(28, 27, 27) 0%,
+      rgb(26, 23, 23) 100%
+    );
     color: white;
   }
   .top-hero-container {
