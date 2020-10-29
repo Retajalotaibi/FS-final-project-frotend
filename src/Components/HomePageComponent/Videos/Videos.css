@@ -14,10 +14,11 @@
     width: 27%;
     height: 250px;
     margin: 10px;
+    transition: all 0.5s ease-in-out;
   }
   .video-container:hover {
     transform: scale(1.1);
-    transition: all 0.5s ease-in-out;
+
     z-index: 1;
   }
   .videos-right {
