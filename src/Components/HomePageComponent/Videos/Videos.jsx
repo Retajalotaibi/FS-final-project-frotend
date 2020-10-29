@@ -6,7 +6,7 @@ import image1 from "./images/img1.png";
 import image3 from "./images/img3.png";
 const Videos = () => {
   return (
-    <div className="videos-container">
+    <div className="videos-container" id="lessons">
       <Video
         title="حروف الإشاره"
         content="٤ فيديوهات"

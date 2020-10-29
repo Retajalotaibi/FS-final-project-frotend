@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import ReactPlayer from "react-player";
 
 class ChallengePage extends Component {
-  state = {};
   render() {
+    console.log(this.props.match.params.type);
     return (
       <div>
         <h1>Challenge page</h1>
