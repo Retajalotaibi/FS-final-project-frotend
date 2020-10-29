@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Practice = (props) => {
   return (
     <div className="practice-card">
-      <Link to={`/callenge/${props.title}`}>
+      <Link to={`/callenge/${props.path}`}>
         <img src={props.img} alt={props.title} />
         <h2 className="card-title">{props.title}</h2>
       </Link>

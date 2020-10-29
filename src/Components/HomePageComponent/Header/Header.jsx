@@ -17,23 +17,23 @@ class Header extends React.Component {
               <h1 className="logo-header">لغتنا لا تختلف</h1>
             </div>
             <li>
-              <a href="/#" className="nav-link">
-                الرئيسية
+              <a href="#lessons" className="nav-link">
+                دروسنا
+              </a>
+            </li>
+            <li>
+              <a href="#info" className="nav-link">
+                معلومات
+              </a>
+            </li>
+            <li>
+              <a href="#challenge" className="nav-link">
+                تحديات
               </a>
             </li>
             <li>
               <a href="/#" className="nav-link">
-                الرئيسية
-              </a>
-            </li>
-            <li>
-              <a href="/#" className="nav-link">
-                الرئيسية
-              </a>
-            </li>
-            <li>
-              <a href="/#" className="nav-link">
-                الرئيسية
+                صفحة المستخدم
               </a>
             </li>
             <div className="burger">

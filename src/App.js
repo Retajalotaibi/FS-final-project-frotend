@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import HomePage from "./pages/HomePage";
-import LessonPage from "./pages/lessonPage";
+import HomePage from "./Pages/HomePage";
+import LessonPage from "./Pages/lessonPage";
 import data from "./data.json";
 import { Route, Redirect } from "react-router-dom";
 import "./videosComponentes/css/page.css";
-import ChallengePage from "./pages/challengePage";
+import ChallengePage from "./Pages/challengePage";
 // function App(props) {
 //   console.log(props);
 //   return (
@@ -30,7 +30,11 @@ class App extends Component {
             return <LessonPage {...props} data={data} />;
           }}
         />
-        <Route exact path="/callenge/:type" component={ChallengePage} />
+        <Route
+          exact
+          path="/callenge/:type"
+          render={(props) => <ChallengePage {...props} />}
+        />
       </div>
     );
   }
