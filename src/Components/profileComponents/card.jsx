@@ -1,20 +1,25 @@
 import React from "react";
-
+import alphabetData from "./alphabet.json";
 class Card extends React.Component {
   render() {
-    console.log(this.props);
-    return (
-      <>
-        <div className="cards">
-          <div className="card">
-            <div className="card__image">
-              <img src={this.props.card.image} width="80" height="120" />
-            </div>
-            <div className="card__desc">{this.props.card.alphabet}</div>
-          </div>
-        </div>
-      </>
+    const result = alphabetData.filter((name) =>
+      name.alphabet.includes(this.props.inputAlph)
     );
+    const cards = result.map((card) => {
+      return (
+        <>
+          <div className="cards">
+            <div className="card">
+              <div className="card__image">
+                <img src={card.image} width="80" height="120" />
+              </div>
+              <div className="card__desc">{card.alphabet}</div>
+            </div>
+          </div>
+        </>
+      );
+    });
+    return <>{cards}</>;
   }
 }
 

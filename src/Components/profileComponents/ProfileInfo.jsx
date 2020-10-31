@@ -12,7 +12,7 @@ class ProfileInfo extends React.Component {
         <section className="Profile-Info">
           <div className="container">
             <div className="Info">
-              <div className="pfp"></div>
+              <div className="pfp">{this.props.user.username}</div>
               <h1>{this.props.user.username}</h1>
               <h6>{this.props.user.email}</h6>
               <button
