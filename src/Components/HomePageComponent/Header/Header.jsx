@@ -1,11 +1,13 @@
 import React from "react";
 import logo from "./Rtaj.png";
 import "./Header.css";
+import { NavLink } from "react-router-dom";
 
 class Header extends React.Component {
   state = {
     open: false,
   };
+
   render() {
     const isOn = this.state.open;
     return (
@@ -32,9 +34,9 @@ class Header extends React.Component {
               </a>
             </li>
             <li>
-              <a href="/#" className="nav-link">
+              <NavLink to="/profile/user" className="nav-link">
                 صفحة المستخدم
-              </a>
+              </NavLink>
             </li>
             <div className="burger">
               <div

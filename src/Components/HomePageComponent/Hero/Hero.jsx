@@ -1,6 +1,7 @@
 import React from "react";
-import imggg from "./Screenshot-2020-10-15-235421.png";
+
 import "./Hero.css";
+
 import ReactPlayer from "react-player";
 const Hero = () => {
   return (
