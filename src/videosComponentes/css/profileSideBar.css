@@ -10,7 +10,7 @@
 }
 .profile-container {
   position: relative;
-  left: 50px;
+  right: 50px;
   /* background-color: lightpink; */
   /* display: flex;
   flex-direction: column;

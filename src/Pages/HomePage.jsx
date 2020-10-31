@@ -8,16 +8,13 @@ import Footer from "../Components/HomePageComponent/Footer/Footer";
 
 class HomePage extends React.Component {
   state = {};
-  componentDidMount() {
-    console.log(this.props);
-  }
+
   render() {
-    console.log(this.props);
     return (
       <>
         {this.props.user ? (
           <>
-            <Header />
+            <Header user={this.props.user} />
             <Hero />
             <Videos />
             <Infos />

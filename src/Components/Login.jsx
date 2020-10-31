@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import Header from "./HomePageComponent/Header/Header";
 import * as userService from "../services/authServices";
 
 class Login extends React.Component {

@@ -1,9 +1,8 @@
 import React from "react";
 import ProfileInfo from "./ProfileInfo";
 import Header from "../HomePageComponent/Header/Header";
-import axios from "axios";
+
 class Profile extends React.Component {
-  state = {};
   // componentDidMount() {
   //   axios.get("http://localhost:4000//profile").then(
   //     (res) => {

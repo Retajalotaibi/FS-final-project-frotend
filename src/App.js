@@ -4,9 +4,12 @@ import "./App.css";
 import RegisterPage from "./Pages/RegisterPage";
 import ProfilePage from "./Pages/ProfilePage";
 import { BrowserRouter, Route, Redirect } from "react-router-dom";
-
+import LessonPage from "./Pages/lessonPage";
+import data from "./data.json";
 import HomePage from "./Pages/HomePage";
 import axios from "axios";
+import "./videosComponentes/css/page.css";
+import ChallengePage from "./Pages/challengePage";
 
 class App extends React.Component {
   state = {
@@ -43,8 +46,18 @@ class App extends React.Component {
                 />
                 <Route
                   exact
-                  path="/profile"
+                  path="/profile/user"
                   render={(props) => <ProfilePage user={this.state.user} />}
+                />
+                <Route
+                  exact
+                  path="/:id"
+                  render={(props) => <LessonPage {...props} data={data} />}
+                />
+                <Route
+                  exact
+                  path="/callenge/:type"
+                  render={(props) => <ChallengePage {...props} />}
                 />
               </>
             ) : (
@@ -62,22 +75,32 @@ class App extends React.Component {
               render={(props) => <LoginPage user={this.state.user} />}
             />
           </>
-
-          {/* <Route
-            exact
-            path="/L:id"
-            render={(props) => {
-              if (!this.state.user) {
-                return <Redirect exact to="/login" />;
-              } else {
-                return <Redirect exact to="/profile" />;
-              }
-            }}
-          /> */}
         </BrowserRouter>
       </>
     );
   }
 }
-
 export default App;
+///////////////////////////////////////////////////////
+// import HomePage from "./Pages/HomePage";
+
+// import { Route, Redirect } from "react-router-dom";
+
+// function App(props) {
+//   console.log(props);
+//   return (
+
+//   );
+// }
+/*
+class App extends Component {
+  
+
+  render() {
+    return (
+      <div>
+        <Route exact path="/" component={HomePage} />
+       🍭here should go the route to logIn 
+        
+      </div>
+}*/

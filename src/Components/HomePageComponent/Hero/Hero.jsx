@@ -1,8 +1,8 @@
 import React from "react";
-import imggg from "./Screenshot-2020-10-15-235421.png";
-import "./Hero.css";
-import { NavLink } from "react-router-dom";
 
+import "./Hero.css";
+
+import ReactPlayer from "react-player";
 const Hero = () => {
   return (
     <div className="hero-section">
@@ -12,15 +12,21 @@ const Hero = () => {
             لغة الإشارة هي أنبل هدية أعطاها الله للصم
           </h2>
           <p className="hero-paragraph">لغتنا لا تختلف</p>
-          <NavLink exact to="/login" className="signup-button hide">
+          <a href="/#" className="signup-button hide">
             إنشاء حساب
-          </NavLink>
+          </a>
         </div>
         <div className="bottom left">
           <a href="/#" className="signup-button show">
             إنشاء حساب
           </a>
-          <img src={imggg} alt="hero-video" className="hero-video" />
+          <ReactPlayer
+            className="hero-video"
+            url="https://youtu.be/2GdRrjrhxFQ"
+            width="100%"
+            height="100%"
+            controls={true}
+          />
         </div>
       </div>
     </div>

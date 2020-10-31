@@ -1,18 +1,35 @@
 import React from "react";
 import alphabetData from "./alphabet.json";
 import Card from "./card";
-const cardItem = alphabetData.map((letter) => (
-  <Card alphabet={letter.alphabet} />
-));
+
 class YourName extends React.Component {
   state = {
     name: "",
   };
-  handleName = () => {
-    const inputAlph = this.state.name;
-    const result = alphabetData.filter((name) => name.alphabet == inputAlph);
-  };
+  // handleName = () => {
+  //   const inputAlph = this.state.name;
+  //   const result = alphabetData.array.filter(
+  //     (name) => name.alphabet == inputAlph
+  //   );
+  //   const cardItem = result.map((letter) => (
+  //     <Card alphabet={letter.alphabet} />
+  //   ));
+  // };
+
   render() {
+    const result = alphabetData.filter(
+      (letter) => letter.alphabet == this.state.name
+    );
+
+    const cards = result.map((card) => {
+      console.log(card);
+      return (
+        <>
+          <Card card={card} />
+        </>
+      );
+    });
+
     return (
       <>
         <div className="Yourname-div">
@@ -24,9 +41,8 @@ class YourName extends React.Component {
             type="text"
             placeholder="اكتب اسمك..."
           ></input>
-          <button>أرسال</button>
+          <div>{cards}</div>
         </div>
-        {cardItem}
       </>
     );
   }

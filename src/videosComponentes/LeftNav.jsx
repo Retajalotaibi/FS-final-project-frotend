@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./css/LeftNav.css";
 function LeftNav(props) {
@@ -22,7 +22,7 @@ function LeftNav(props) {
           {props.data.map((data) => (
             <li className="nav-item active" key={data.id}>
               <Link
-                to={`/L/${data.id}`}
+                to={data.id}
                 className="nav-links "
                 onClick={colseMobileMenu}
               >
@@ -30,22 +30,6 @@ function LeftNav(props) {
               </Link>
             </li>
           ))}
-
-          {/* <li className="nav-item">
-            <Link to="/corses" className="nav-links" onClick={colseMobileMenu}>
-              الفيديو الثاني
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/sign-up" className="nav-links" onClick={colseMobileMenu}>
-              تحدي
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/about" className="nav-links" onClick={colseMobileMenu}>
-              الفيديو الثالث
-            </Link>
-          </li> */}
         </ul>
       </div>
     </nav>

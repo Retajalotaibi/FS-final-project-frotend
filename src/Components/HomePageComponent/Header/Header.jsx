@@ -7,34 +7,36 @@ class Header extends React.Component {
   state = {
     open: false,
   };
+
   render() {
     const isOn = this.state.open;
-
     return (
       <header>
         <nav>
           <ul className="nav-links">
             <div className="logo-container">
               <img src={logo} alt="OurLogo" className="main-logo" />
-              <h1 className="logo-header">الامل</h1>
+              <h1 className="logo-header">لغتنا لا تختلف</h1>
             </div>
             <li>
-              <NavLink exact to="/profile" className="nav-link">
-                صفحة المستخدم
-              </NavLink>
-            </li>
-            <li>
-              <NavLink exact to="/" className="nav-link">
-                الرئيسية
-              </NavLink>
-            </li>
-            <li>
-              <a href="/#" className="nav-link">
-                الرئيسية
+              <a href="#lessons" className="nav-link">
+                دروسنا
               </a>
             </li>
             <li>
-              <a href="/#" className="nav-link"></a>
+              <a href="#info" className="nav-link">
+                معلومات
+              </a>
+            </li>
+            <li>
+              <a href="#challenge" className="nav-link">
+                تحديات
+              </a>
+            </li>
+            <li>
+              <NavLink to="/profile/user" className="nav-link">
+                صفحة المستخدم
+              </NavLink>
             </li>
             <div className="burger">
               <div
