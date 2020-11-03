@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import pplTalking from "./ppl-talking.png";
 import * as userService from "../services/userService";
 
 class Register extends React.Component {
@@ -10,15 +10,19 @@ class Register extends React.Component {
       username: "",
       email: "",
       password: "",
+      number: "",
+      city: "",
     };
   }
   submit = async () => {
-    const { username, email, password } = this.state;
+    const { username, email, password, number, city } = this.state;
 
     const user = {
       username: username,
       email: email,
       password: password,
+      number: number,
+      city: city,
     };
     console.log("sumbit user", user);
 
@@ -42,59 +46,92 @@ class Register extends React.Component {
     const { username } = this.state;
 
     const { password } = this.state;
+    const { city } = this.state;
+
+    const { number } = this.state;
     return (
       <>
-        <section className="form-section">
-          <form method="POST" id="REGform">
+        {" "}
+        <div className="skewed"> </div>
+        <section className="form-section login">
+          <form method="POST" id="REGform" className="regform">
             <legend>
-              <div className="container">
+              <div className="container ">
                 <div className="sign-up">
-                  <h1>Sign Up</h1>
+                  <h1>انشاء حساب</h1>
+                </div>
+                <div className="form-row">
+                  <div className="input__div">
+                    <h3>اسم المستخدم</h3>
+                    <input
+                      type="text"
+                      placeholder=" اكتب اسمك"
+                      value={username}
+                      id="username"
+                      name="username"
+                      onChange={this.handleChange}
+                    ></input>
+                  </div>
+                  <div className="input__div">
+                    <h3>البريد الالكتروني</h3>
+                    <input
+                      type="email"
+                      placeholder="اكتب ايميلك"
+                      value={email}
+                      id="email"
+                      name="email"
+                      onChange={this.handleChange}
+                    ></input>
+                  </div>
+                </div>
+                <div className="form-row">
+                  <div className="input__div">
+                    <h3>رقم المستخدم</h3>
+                    <input
+                      type="text"
+                      placeholder="الرقم"
+                      value={number}
+                      id="username"
+                      name="number"
+                      onChange={this.handleChange}
+                    ></input>
+                  </div>
+                  <div className="input__div">
+                    <h3>المدينه</h3>
+                    <input
+                      type="text"
+                      placeholder="اكتب مدينتك"
+                      value={city}
+                      id="city"
+                      name="city"
+                      onChange={this.handleChange}
+                    ></input>
+                  </div>
                 </div>
                 <div className="input__div">
-                  <h2>Username</h2>
-                  <input
-                    type="text"
-                    placeholder="Enter your username"
-                    value={username}
-                    id="username"
-                    name="username"
-                    onChange={this.handleChange}
-                  ></input>
-                </div>
-                <div className="input__div">
-                  <h2>Email</h2>
-                  <input
-                    type="email"
-                    placeholder="Enter your Email"
-                    value={email}
-                    id="email"
-                    name="email"
-                    onChange={this.handleChange}
-                  ></input>
-                </div>
-                <div className="input__div">
-                  <h2>Password</h2>
+                  <h3>كلمة المرور</h3>
                   <input
                     type="password"
-                    placeholder="Enter your Password"
+                    placeholder="اكتب كلمة مرورك"
                     value={password}
                     id="password"
                     name="password"
                     onChange={this.handleChange}
                   ></input>
-                  <NavLink exact to="/login">
-                    <p>Already have an account ?</p>
+                  <NavLink exact to="/login" className="unregistered">
+                    <p>تملك حساب ؟</p>
                   </NavLink>
                 </div>
                 <div onClick={this.submit} className="submit-btn">
-                  Register
+                  انشاء
                 </div>
-                <div className="submit-cube"></div>
               </div>
             </legend>
           </form>
-          <div className="pink-cube"></div>
+          <div className="login-info">
+            <img src={pplTalking}></img>
+            <h1>لغة الاشارة هي انبل هدية اعطاها الله للصم</h1>
+          </div>
         </section>
       </>
     );

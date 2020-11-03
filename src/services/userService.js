@@ -5,6 +5,8 @@ export function register(user) {
   return http.post(URL, {
     username: user.username,
     email: user.email,
+    city: user.city,
+    number: user.number,
     password: user.password,
   });
 }

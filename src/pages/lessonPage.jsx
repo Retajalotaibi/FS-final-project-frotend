@@ -44,7 +44,11 @@ class LessonPage extends Component {
           firstData={this.props.data[0]}
           onComplet={this.handleCompleting}
         />
-        <ProfileSideBar userData={this.findUserData()} name="name" />{" "}
+        <ProfileSideBar
+          userData={this.findUserData()}
+          name="name"
+          user={this.props.user}
+        />{" "}
         {/*🍭🎹here also pass the user name in name */}
       </div>
     );

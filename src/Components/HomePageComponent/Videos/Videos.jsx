@@ -14,7 +14,7 @@ const Videos = () => {
         path={"lesson1-1"}
       />
       <Video
-        title="كيف تتعامل مع الصم والبكم"
+        title="كلمات متنوعة"
         content="٤ فيدويوهات"
         img={image2}
         path={"lesson2-1"}

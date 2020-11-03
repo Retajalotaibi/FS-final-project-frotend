@@ -52,7 +52,9 @@ class App extends React.Component {
                 <Route
                   exact
                   path="/:id"
-                  render={(props) => <LessonPage {...props} data={data} />}
+                  render={(props) => (
+                    <LessonPage {...props} data={data} user={this.state.user} />
+                  )}
                 />
                 <Route
                   exact

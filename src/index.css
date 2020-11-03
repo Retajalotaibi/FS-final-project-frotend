@@ -22,6 +22,7 @@ body {
   margin: 40px;
   width: 370px;
   margin: auto;
+  border: 5px solid rgb(255, 77, 106);
 }
 #REGform input {
   padding: 10px 20px;
@@ -63,10 +64,20 @@ body {
 .form-section {
   display: flex;
 }
+.form-section .container {
+  width: 600px;
+}
 .input__div p {
   text-decoration: gray;
   color: gray;
   text-align: center;
+}
+.input__div {
+  padding-top: 20px;
+}
+.input__div h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 .submit-cube {
   position: absolute;
@@ -74,7 +85,6 @@ body {
   height: 26px;
   left: 715px;
   top: 586px;
-
   background: rgba(255, 106, 106, 0.83);
 }
 .submit-cube-login {
@@ -117,10 +127,11 @@ body {
   color: rgb(189, 189, 189);
 }
 .Info {
+  font-size: 30px;
   display: block;
   background-color: #0f0f0ff6;
   border-radius: 5px;
-  width: 200px;
+  width: 500px;
   height: 100%;
   text-align: center;
   justify-content: center;
@@ -166,4 +177,80 @@ body {
   font-size: 25px;
   border: 3px solid rgb(43, 41, 41);
   cursor: pointer;
+}
+.card__desc {
+  color: white;
+  background-color: rgb(22, 22, 22);
+  padding: 15px;
+  font-size: 23px;
+}
+.card {
+  width: 148px;
+  margin-right: 150px;
+  border: 4px solid rgb(209, 26, 57);
+}
+.personal-info {
+  background-color: rgb(10, 10, 10);
+  width: 100%;
+  border-radius: 10px;
+}
+.personal-info h6 {
+  padding: 20px;
+}
+.skewed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: #111111;
+  z-index: 0;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+
+.login {
+  position: relative;
+  z-index: 10px;
+  display: flex;
+}
+.login img {
+  height: 400px;
+}
+.login-info {
+  display: flex;
+  color: white;
+  font-size: 30px;
+  padding-top: 100px;
+  width: 800px;
+}
+
+.login-info h1 {
+  margin-top: 130px;
+  font-size: 30px;
+}
+.form-row {
+  display: flex;
+  padding-left: 30px;
+}
+.form-section #REGform {
+  width: 700px;
+  background-color: rgb(0, 0, 0);
+  padding: 40px;
+  margin: auto;
+  margin-top: 100px;
+  color: rgb(129, 129, 129);
+  margin-right: 40px;
+}
+.form-section .input__div {
+  padding-left: 20px;
+}
+.form-section #REGform .input__div input {
+  padding: 10px 10px 10px 110px;
+}
+.unregistered {
+  text-decoration: none;
+  padding: 10px;
 }

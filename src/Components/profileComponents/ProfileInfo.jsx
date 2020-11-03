@@ -12,9 +12,13 @@ class ProfileInfo extends React.Component {
         <section className="Profile-Info">
           <div className="container">
             <div className="Info">
-              <div className="pfp">{this.props.user.username}</div>
+              <div className="pfp"></div>
               <h1>{this.props.user.username}</h1>
-              <h6>{this.props.user.email}</h6>
+              <div className="personal-info">
+                <h6>{this.props.user.email}</h6>
+                <h6>{this.props.user.number}</h6>
+                <h6>{this.props.user.city}</h6>
+              </div>
               <button
                 className="logout-btn"
                 style={{ cursor: "pointer" }}

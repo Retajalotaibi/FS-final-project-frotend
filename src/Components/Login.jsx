@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import pplTalking from "./ppl-talking.png";
 import * as userService from "../services/authServices";
 
 class Login extends React.Component {
@@ -21,44 +21,49 @@ class Login extends React.Component {
   render() {
     return (
       <>
-        <section>
+        <div className="skewed"> </div>
+
+        <section className="login">
           <form method="POST" id="REGform">
             <legend>
               <div className="container">
                 <div className="sign-up">
-                  <h1>Log in</h1>
+                  <h1>تسجيل الدخول</h1>
                 </div>
 
                 <div className="input__div">
-                  <h2>Email</h2>
+                  <h3>البريد الالكتروني</h3>
                   <input
                     type="email"
-                    placeholder="Enter your Email"
+                    placeholder="اكتب ايميلك "
                     id="email"
                     name="email"
                     onChange={this.handleChange}
                   ></input>
                 </div>
                 <div className="input__div">
-                  <h2>Password</h2>
+                  <h3>كلمة المرور </h3>
                   <input
                     type="password"
-                    placeholder="Enter your Password"
+                    placeholder="اكتب كلمة المرور "
                     id="password"
                     name="password"
                     onChange={this.handleChange}
                   ></input>
-                  <NavLink exact to="/register">
-                    <p>Don't have an Account?</p>
+                  <NavLink exact to="/register" className="unregistered">
+                    <p>لا تملك حساب ؟ </p>
                   </NavLink>
                 </div>
                 <div onClick={this.LogingIn} className="submit-btn">
-                  log in <div className="submit-cube-login"></div>
+                  سجل
                 </div>
               </div>
-              <div className="pink-cube"></div>
             </legend>
           </form>
+          <div className="login-info">
+            <img src={pplTalking}></img>
+            <h1>لغة الاشارة هي انبل هدية اعطاها الله للصم</h1>
+          </div>
         </section>
       </>
     );
