@@ -14,7 +14,7 @@ const ProgressCounter = (props) => {
   return (
     <div className="progress">
       <div className="progress-done" style={style}>
-        {props.done}&
+        {props.done}%
       </div>
     </div>
   );
