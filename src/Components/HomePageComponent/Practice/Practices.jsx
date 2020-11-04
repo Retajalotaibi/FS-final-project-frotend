@@ -8,8 +8,8 @@ const Practices = (props) => {
   return (
     <div className="practice-container" id="challenge">
       <div className="practice-cards">
-        <Practice title="Play Hang Man" img={HangMan} path="challenge1" />
-        <Practice title="Play Hang Man" img={HangMan} path="challenge2" />
+        <Practice title="التحدي الأول" img={HangMan} path="challenge1" />
+        <Practice title="التحدي الثاني" img={HangMan} path="challenge2" />
       </div>
     </div>
   );
