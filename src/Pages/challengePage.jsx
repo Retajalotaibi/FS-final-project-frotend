@@ -42,7 +42,7 @@ class ChallengePage extends Component {
           </ul>
         </header>
         <ChalllengeVideo url={challenge[0].url} />
-        <div className="container">
+        <div className="CH-container">
           <h2>تصف هذه الحركه اي كلمه ؟</h2>
           <div className="answers">
             {shuffled.map((item) => (
