@@ -22,7 +22,6 @@ class YourName extends React.Component {
   // };
 
   render() {
-    console.log(this.state.name);
     return (
       <>
         <div className="Yourname-div">
@@ -33,7 +32,7 @@ class YourName extends React.Component {
             name="name"
             className="input-name"
             type="text"
-            placeholder="اكتب اسمك..."
+            placeholder="اكتب حروف اسمك..."
           ></input>
           <div>
             <Card inputAlph={this.state.name} />

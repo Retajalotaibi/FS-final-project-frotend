@@ -21,7 +21,7 @@ class ProfileSideBar extends Component {
       <div className="profileSideBar-container">
         <div className="profile-container">
           <img src={profileImage} width={80} />
-          <h4>{this.props.name}</h4>
+          <h4>{this.props.user.username}</h4>
           <div className="cards-container">
             <div className="card"></div>
             <div className="card"></div>
