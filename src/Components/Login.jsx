@@ -69,40 +69,17 @@ class Login extends React.Component {
     );
   }
   LogingIn = async (e) => {
-    console.log("log in ");
-    // const request = {
-    //   email: this.state.email,
-    //   password: this.state.password,
-    // };
     try {
       const { data: jwt } = await userService.login(
         this.state.email,
         this.state.password
       );
       window.location.reload();
-      console.log(jwt, "jwt");
       localStorage.setItem("jwt", jwt);
     } catch (error) {
       console.log(error);
     }
-
-    /*let request = {
-      email: this.state.email,
-      password: this.state.password,
-    };
-    if (this.state.email && this.state.password) {
-      localStorage.setItem(this.state.email, this.state.password);
-    }
-    */
   };
 }
 
 export default Login;
-// axios
-//   .post("http://localhost:4000/homepage", { body: request })
-//   .then((res) => {
-//     console.log(res);
-//   })
-
-//   .catch((err) => console.log(err));
-// console.log(JSON.stringify(request));

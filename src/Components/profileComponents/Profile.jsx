@@ -4,7 +4,7 @@ import Header from "../HomePageComponent/Header/Header";
 
 class Profile extends React.Component {
   logout = () => {
-    localStorage.removeItem("jwt"); // this is how u remove an item from localstorage
+    localStorage.removeItem("jwt");
     window.location.reload();
   };
   render() {

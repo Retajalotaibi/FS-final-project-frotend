@@ -15,7 +15,6 @@ class ProfileSideBar extends Component {
     return done;
   };
   render() {
-    console.log("profile page ", this.props.userData);
     this.donePercent();
     return (
       <div className="profileSideBar-container">

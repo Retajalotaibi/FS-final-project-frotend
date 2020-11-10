@@ -16,14 +16,12 @@ class App extends React.Component {
     user: null,
   };
   componentDidMount = () => {
-    console.log(localStorage.getItem("jwt"));
     axios.defaults.headers.common["Authorization"] = localStorage.getItem(
       "jwt"
     );
     axios
       .get("http://localhost:4000/")
       .then((res) => {
-        console.log(res, "123");
         if (res.data.user !== "you dont have permission") {
           this.setState({
             user: res.data,

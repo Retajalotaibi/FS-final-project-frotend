@@ -2,7 +2,7 @@ import React from "react";
 import YourName from "./YourName";
 class ProfileInfo extends React.Component {
   logout = () => {
-    localStorage.removeItem("jwt"); // this is how u remove an item from localstorage
+    localStorage.removeItem("jwt");
     window.location.reload();
   };
   render() {

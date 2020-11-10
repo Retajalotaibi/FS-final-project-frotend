@@ -13,7 +13,6 @@ const ResponsivePlayer = (props) => {
     }
     saveOldKey(path);
   });
-  console.log("path", props.location.pathname);
   return (
     <React.Fragment>
       <div className="player-container">

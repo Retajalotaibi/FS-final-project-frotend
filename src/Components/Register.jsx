@@ -24,11 +24,9 @@ class Register extends React.Component {
       number: number,
       city: city,
     };
-    console.log("sumbit user", user);
 
     try {
       const resUser = await userService.register(user);
-      console.log("backend res", resUser);
     } catch (error) {
       console.log(error);
     }
