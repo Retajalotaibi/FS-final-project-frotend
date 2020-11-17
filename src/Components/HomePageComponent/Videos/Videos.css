@@ -16,11 +16,16 @@
     margin-left: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+    transition: all 0.5s ease-in-out;
   }
+
   .video-container:hover {
     transform: scale(1.1);
 
     z-index: 1;
+  }
+  .video-container a {
+    text-decoration: none;
   }
   .videos-right {
     display: flex;

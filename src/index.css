@@ -110,7 +110,8 @@ body {
 }
 .Info {
   font-size: 30px;
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-color: #0f0f0ff6;
   border-radius: 5px;
   width: 500px;
@@ -121,7 +122,6 @@ body {
   color: white;
 }
 .logout-btn {
-  margin-top: 230px;
   border: none;
   padding: 10px;
   font-size: 20px;

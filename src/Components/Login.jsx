@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import pplTalking from "./ppl-talking.png";
 import * as userService from "../services/authServices";
+import Loader  from "react-loader-spinner"
 
 class Login extends React.Component {
   constructor(props) {
@@ -11,6 +11,7 @@ class Login extends React.Component {
         email: "",
         password: "",
       },
+      para: false
     };
   }
   handleChange = (event) => {
@@ -55,13 +56,22 @@ class Login extends React.Component {
                   </NavLink>
                 </div>
                 <div onClick={this.LogingIn} className="submit-btn">
-                  سجل
+                  <h4>سجل</h4>
+                  
+                {this.state.para ? <Loader
+                    type="ThreeDots"
+                    color="#FF69B4"
+                    height={50}
+                    width={50}
+                    timeout={3000}
+                  /> : ""}
+                  
                 </div>
               </div>
             </legend>
           </form>
           <div className="login-info">
-            <img src={pplTalking}></img>
+            <img src="./images/ppl-talking.png"></img>
             <h1>لغة الاشارة هي انبل هدية اعطاها الله للصم</h1>
           </div>
         </section>
@@ -69,6 +79,7 @@ class Login extends React.Component {
     );
   }
   LogingIn = async (e) => {
+    this.setState({ para: true });
     try {
       const { data: jwt } = await userService.login(
         this.state.email,
@@ -76,9 +87,11 @@ class Login extends React.Component {
       );
       window.location.reload();
       localStorage.setItem("jwt", jwt);
+      
     } catch (error) {
       console.log(error);
     }
+    this.setState({ para: false });
   };
 }
 

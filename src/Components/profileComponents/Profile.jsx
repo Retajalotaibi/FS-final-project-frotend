@@ -1,6 +1,7 @@
 import React from "react";
 import ProfileInfo from "./ProfileInfo";
 import Header from "../HomePageComponent/Header/Header";
+import { NavLink } from "react-router-dom";
 
 class Profile extends React.Component {
   logout = () => {
@@ -10,7 +11,7 @@ class Profile extends React.Component {
   render() {
     return (
       <>
-        <Header />
+        <NavLink to="/" className="back-to-home"><p>الرجوع الى الصفحة الرئيسية</p></NavLink>
 
         <header className="profile-header">
           <div className="head"></div>

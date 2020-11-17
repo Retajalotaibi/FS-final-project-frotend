@@ -1,28 +1,26 @@
 import React from "react";
 import Video from "./Video";
 import "./Videos.css";
-import image2 from "./images/howToDeal.png";
-import image1 from "./images/img1.png";
-import image3 from "./images/img3.png";
+
 const Videos = () => {
   return (
     <div className="videos-container" id="lessons">
       <Video
         title="حروف الإشاره"
         content="٤ فيديوهات"
-        img={image1}
+        img="./images/3Pics/img1.png"
         path={"lesson1-1"}
       />
       <Video
         title="كلمات متنوعة"
         content="٤ فيدويوهات"
-        img={image2}
+        img="./images/3Pics/howToDeal.png"
         path={"lesson2-1"}
       />
       <Video
         title="التعابير بلغة الإشاره"
         content="٤ فيديوهات"
-        img={image3}
+        img="./images/3Pics/img3.png"
         path={"lesson3-1"}
       />
     </div>
