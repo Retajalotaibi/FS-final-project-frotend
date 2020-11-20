@@ -4,7 +4,7 @@ import "./App.css";
 import RegisterPage from "./Pages/RegisterPage";
 import ProfilePage from "./Pages/ProfilePage";
 import { BrowserRouter, Route, Redirect } from "react-router-dom";
-import LessonPage from "./Pages/lessonPage";
+// import LessonPage from "./Pages/lessonPage";
 import data from "./data.json";
 import HomePage from "./Pages/HomePage";
 import axios from "axios";
@@ -47,13 +47,13 @@ class App extends React.Component {
                   path="/profile/user"
                   render={(props) => <ProfilePage user={this.state.user} />}
                 />
-                <Route
+                {/* <Route
                   exact
                   path="/:id"
                   render={(props) => (
                     <LessonPage {...props} data={data} user={this.state.user} />
                   )}
-                />
+                /> */}
                 <Route
                   exact
                   path="/callenge/:type"
