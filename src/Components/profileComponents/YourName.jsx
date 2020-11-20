@@ -1,5 +1,4 @@
 import React from "react";
-import alphabetData from "./alphabet.json";
 import Card from "./card";
 
 class YourName extends React.Component {
