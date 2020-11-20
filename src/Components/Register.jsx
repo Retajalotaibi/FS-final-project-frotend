@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import pplTalking from "./ppl-talking.png";
 import * as userService from "../services/userService";
+import Loader from "react-loader-spinner";
 
 class Register extends React.Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class Register extends React.Component {
       city: "",
     };
   }
+
   submit = async () => {
     const { username, email, password, number, city } = this.state;
 
@@ -49,10 +51,11 @@ class Register extends React.Component {
     const { city } = this.state;
 
     const { number } = this.state;
+
     return (
       <>
-        {" "}
         <div className="skewed"> </div>
+
         <section className="form-section login">
           <form method="POST" id="REGform" className="regform">
             <legend>
@@ -122,8 +125,16 @@ class Register extends React.Component {
                     <p>تملك حساب ؟</p>
                   </NavLink>
                 </div>
+
                 <div onClick={this.submit} className="submit-btn">
                   انشاء
+                  <Loader
+                    type="ThreeDots"
+                    color="#FF69B4"
+                    height={50}
+                    width={50}
+                    timeout={3000}
+                  />
                 </div>
               </div>
             </legend>
@@ -138,36 +149,3 @@ class Register extends React.Component {
   }
 }
 export default Register;
-
-//////////////////////////////
-// code i might use later ////
-//////////////////////////////
-
-// onClick={() => this.props.Submiting()}
-
-// let inputUsername = document.querySelector("#username").value
-// let inputEmail = document.querySelector("email").value
-// let inputPassword = document.querySelector("password").value
-// let data = {username:inputUsername , email:inputEmail, password:inputPassword }
-// const options = {
-//     method:'POST',
-//     headers: {
-//         'Content-type': 'application/json'
-//     },
-//     body: JSON.stringify(data)
-// }
-// fetch("/api", options)
-//
-//const user = {
-//   username: username,
-//   email: email,
-//   password: password,
-// };
-// console.log("sumbit user", user);
-
-// try {
-//   const resUser = await userService.register(user);
-//   console.log("backend res", resUser);
-// } catch (error) {
-//   console.log(error);
-// }

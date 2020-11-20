@@ -5,9 +5,7 @@ function init() {
   // }).install();
 }
 
-function log(error) {
-  // Raven.captureException(error);
-}
+function log(error) {}
 
 export default {
   init,

@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import pplTalking from "./ppl-talking.png";
 import * as userService from "../services/authServices";
-
+import Loader from "react-loader-spinner";
 class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -18,6 +18,7 @@ class Login extends React.Component {
       [event.target.name]: event.target.value,
     });
   };
+
   render() {
     return (
       <>
@@ -56,6 +57,13 @@ class Login extends React.Component {
                 </div>
                 <div onClick={this.LogingIn} className="submit-btn">
                   سجل
+                  <Loader
+                    type="ThreeDots"
+                    color="#FF69B4"
+                    height={50}
+                    width={50}
+                    timeout={3000}
+                  />
                 </div>
               </div>
             </legend>
@@ -69,40 +77,19 @@ class Login extends React.Component {
     );
   }
   LogingIn = async (e) => {
-    console.log("log in ");
-    // const request = {
-    //   email: this.state.email,
-    //   password: this.state.password,
-    // };
     try {
       const { data: jwt } = await userService.login(
         this.state.email,
         this.state.password
       );
+
       window.location.reload();
       console.log(jwt, "jwt");
       localStorage.setItem("jwt", jwt);
     } catch (error) {
       console.log(error);
     }
-
-    /*let request = {
-      email: this.state.email,
-      password: this.state.password,
-    };
-    if (this.state.email && this.state.password) {
-      localStorage.setItem(this.state.email, this.state.password);
-    }
-    */
   };
 }
 
 export default Login;
-// axios
-//   .post("http://localhost:4000/homepage", { body: request })
-//   .then((res) => {
-//     console.log(res);
-//   })
-
-//   .catch((err) => console.log(err));
-// console.log(JSON.stringify(request));
