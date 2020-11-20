@@ -57,15 +57,18 @@ class Login extends React.Component {
                 </div>
                 <div onClick={this.LogingIn} className="submit-btn">
                   <h4>سجل</h4>
-                  
-                {this.state.para ? <Loader
-                    type="ThreeDots"
-                    color="#FF69B4"
-                    height={50}
-                    width={50}
-                    timeout={3000}
-                  /> : ""}
-                  
+
+                  {this.state.para ? (
+                    <Loader
+                      type="ThreeDots"
+                      color="#FF69B4"
+                      height={50}
+                      width={50}
+                      timeout={3000}
+                    />
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
             </legend>
@@ -87,7 +90,6 @@ class Login extends React.Component {
       );
       window.location.reload();
       localStorage.setItem("jwt", jwt);
-      
     } catch (error) {
       console.log(error);
     }
