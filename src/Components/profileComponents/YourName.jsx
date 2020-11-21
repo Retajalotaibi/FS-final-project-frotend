@@ -13,14 +13,6 @@ class YourName extends React.Component {
     });
   };
 
-  // handleName = () => {
-
-  // result = alphabetData.array.filter((name) => name.alphabet == inputAlph);
-  //   const cardItem = result.map((letter) => (
-  //     <Card alphabet={letter.alphabet} />
-  //   ));
-  // };
-
   render() {
     return (
       <>

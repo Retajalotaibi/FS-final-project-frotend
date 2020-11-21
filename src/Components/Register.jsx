@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import pplTalking from "./ppl-talking.png";
 import * as userService from "../services/userService";
 import Loader from "react-loader-spinner";
 
@@ -13,10 +12,12 @@ class Register extends React.Component {
       password: "",
       number: "",
       city: "",
+      para: false,
     };
   }
 
   submit = async () => {
+    this.setState({ para: true });
     const { username, email, password, number, city } = this.state;
 
     const user = {
@@ -26,14 +27,13 @@ class Register extends React.Component {
       number: number,
       city: city,
     };
-    console.log("sumbit user", user);
 
     try {
       const resUser = await userService.register(user);
-      console.log("backend res", resUser);
     } catch (error) {
       console.log(error);
     }
+    this.setState({ para: false });
   };
 
   handleChange = (event) => {
@@ -127,20 +127,24 @@ class Register extends React.Component {
                 </div>
 
                 <div onClick={this.submit} className="submit-btn">
-                  انشاء
-                  <Loader
-                    type="ThreeDots"
-                    color="#FF69B4"
-                    height={50}
-                    width={50}
-                    timeout={3000}
-                  />
+                  <h4>انشاء</h4>
+                  {this.state.para ? (
+                    <Loader
+                      type="ThreeDots"
+                      color="#FF69B4"
+                      height={50}
+                      width={50}
+                      timeout={3000}
+                    />
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
             </legend>
           </form>
           <div className="login-info">
-            <img src={pplTalking}></img>
+            <img src="./images/ppl-talking.png"></img>
             <h1>لغة الاشارة هي انبل هدية اعطاها الله للصم</h1>
           </div>
         </section>

@@ -1,16 +1,17 @@
 import React from "react";
 import ProfileInfo from "./ProfileInfo";
 import Header from "../HomePageComponent/Header/Header";
+import { NavLink } from "react-router-dom";
 
 class Profile extends React.Component {
   logout = () => {
-    localStorage.removeItem("jwt"); // this is how u remove an item from localstorage
+    localStorage.removeItem("jwt");
     window.location.reload();
   };
   render() {
     return (
       <>
-        <Header />
+        <NavLink to="/" className="back-to-home"><p>الرجوع الى الصفحة الرئيسية</p></NavLink>
 
         <header className="profile-header">
           <div className="head"></div>

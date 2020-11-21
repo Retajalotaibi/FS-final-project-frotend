@@ -1,7 +1,6 @@
 import React from "react";
-import logo from "./Rtaj.png";
 import "./Header.css";
-import { NavLink } from "react-router-dom";
+import { NavLink , Link } from "react-router-dom";
 
 class Header extends React.Component {
   state = {
@@ -15,7 +14,7 @@ class Header extends React.Component {
         <nav>
           <ul className="nav-links">
             <div className="logo-container">
-              <img src={logo} alt="OurLogo" className="main-logo" />
+              <img src="./images/Rtaj.png" alt="OurLogo" className="main-logo" />
               <h1 className="logo-header">لغتنا لا تختلف</h1>
             </div>
             <li>

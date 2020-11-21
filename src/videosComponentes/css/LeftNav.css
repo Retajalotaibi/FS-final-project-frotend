@@ -70,11 +70,6 @@
   height: 100%;
 }
 
-.nav-links:hover {
-  border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
-}
-
 .fa-bars {
   color: #fff;
 }
@@ -184,5 +179,10 @@
     background: #fff;
     color: #242424;
     transition: 250ms;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .profileSideBar-container {
+    display: none;
   }
 }

@@ -16,14 +16,12 @@ class App extends React.Component {
     user: null,
   };
   componentDidMount = () => {
-    console.log(localStorage.getItem("jwt"));
     axios.defaults.headers.common["Authorization"] = localStorage.getItem(
       "jwt"
     );
     axios
       .get("http://localhost:4000/")
       .then((res) => {
-        console.log(res, "123");
         if (res.data.user !== "you dont have permission") {
           this.setState({
             user: res.data,
@@ -83,26 +81,3 @@ class App extends React.Component {
   }
 }
 export default App;
-///////////////////////////////////////////////////////
-// import HomePage from "./Pages/HomePage";
-
-// import { Route, Redirect } from "react-router-dom";
-
-// function App(props) {
-//   console.log(props);
-//   return (
-
-//   );
-// }
-/*
-class App extends Component {
-  
-
-  render() {
-    return (
-      <div>
-        <Route exact path="/" component={HomePage} />
-       🍭here should go the route to logIn 
-        
-      </div>
-}*/

@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.back-to-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  padding: 30px;
+  text-decoration: none;
+}
+.back-to-home p {
+  transition: all 0.5s ease-in-out;
+}
+.back-to-home p:hover {
+  font-size: 20px;
+}

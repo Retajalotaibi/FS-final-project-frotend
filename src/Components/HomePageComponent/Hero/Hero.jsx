@@ -3,6 +3,7 @@ import React from "react";
 import "./Hero.css";
 
 import ReactPlayer from "react-player";
+import { NavLink } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="hero-section">
@@ -12,14 +13,14 @@ const Hero = () => {
             لغة الإشارة هي أنبل هدية أعطاها الله للصم
           </h2>
           <p className="hero-paragraph">لغتنا لا تختلف</p>
-          <a href="/#" className="signup-button hide">
+          <NavLink to="/register" className="signup-button hide">
             إنشاء حساب
-          </a>
+          </NavLink>
         </div>
         <div className="bottom left">
-          <a href="/#" className="signup-button show">
+          <NavLink to="/register" className="signup-button show">
             إنشاء حساب
-          </a>
+          </NavLink>
           <ReactPlayer
             className="hero-video"
             url="https://youtu.be/2GdRrjrhxFQ"

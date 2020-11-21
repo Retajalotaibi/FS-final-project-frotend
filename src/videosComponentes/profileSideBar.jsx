@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import profileImage from "./css/profile.png";
 import ProgressCounter from "./progressCounter";
 import "./css/profileSideBar.css";
 class ProfileSideBar extends Component {
@@ -15,12 +14,11 @@ class ProfileSideBar extends Component {
     return done;
   };
   render() {
-    console.log("profile page ", this.props.userData);
     this.donePercent();
     return (
       <div className="profileSideBar-container">
         <div className="profile-container">
-          <img src={profileImage} width={80} />
+          <img src="./images/profile.png" width={80} />
           <h4>{this.props.user.username}</h4>
           <div className="cards-container">
             <div className="card"></div>
@@ -28,10 +26,10 @@ class ProfileSideBar extends Component {
             <div className="card"></div>
           </div>
         </div>
-        <div className="progress-items-container">
+        {/* <div className="progress-items-container">
           <h2>تطورك في هذا الكورس</h2>
           <ProgressCounter done={this.donePercent()} />
-        </div>
+        </div> */}
       </div>
     );
   }

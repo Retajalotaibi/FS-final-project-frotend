@@ -22,16 +22,12 @@ class LessonPage extends Component {
     const splitedPath = path.split("-");
     const nPath = splitedPath[0].replace("/", "");
 
-    //🎹just change the userData to the data from the backend
     return userData.filter((item) => item.title.includes(nPath));
   };
 
   handleCompleting = (obj, lesson) => {
-    console.log("the lesson id", lesson);
     if (obj.played >= 0.7) {
       console.log("done");
-      //🎹 add the code to toggle the value in the backend
-      //you have the lesson name as a prameter => lesson3-1
     }
   };
   render() {
@@ -48,8 +44,7 @@ class LessonPage extends Component {
           userData={this.findUserData()}
           name="name"
           user={this.props.user}
-        />{" "}
-        {/*🍭🎹here also pass the user name in name */}
+        />
       </div>
     );
   }

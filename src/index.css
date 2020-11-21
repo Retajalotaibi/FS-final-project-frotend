@@ -10,235 +10,621 @@ body {
 }
 
 /* Register */
+@media only screen and (min-width: 860px) and (max-width: 7000px) {
+  #REGform {
+    width: 450px;
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+    margin: auto;
+    margin-right: 100px;
+    margin-top: 100px;
+    color: rgb(129, 129, 129);
+    align-content: center;
+  }
+  .container {
+    background-color: rgb(31, 31, 31);
+    padding: 40px;
+    margin: 40px;
+    width: 370px;
+    margin: auto;
+    border: 5px solid rgb(255, 77, 106);
+  }
+  #REGform input {
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+  }
+  .sign-up h1 {
+    width: 200px;
+    font-size: 30px;
+    color: white;
+    border: none;
+    margin: 0;
+  }
+  .sign-up {
+    text-align: center;
+    width: 200px;
+    margin-right: 0;
+    margin-left: 86px;
+  }
+  .submit-btn {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    font-size: 36px;
+    cursor: pointer;
+  }
 
-#REGform {
-  width: 450px;
-  background-color: rgb(0, 0, 0);
-  padding: 40px;
-  margin: auto;
-  margin-top: 100px;
-  color: rgb(129, 129, 129);
-}
-.container {
-  background-color: rgb(31, 31, 31);
-  padding: 40px;
-  margin: 40px;
-  width: 370px;
-  margin: auto;
-  border: 5px solid rgb(255, 77, 106);
-}
-#REGform input {
-  padding: 10px 20px;
-  width: 100%;
-  border-radius: 10px;
-  outline: none;
-  border: none;
-}
-.sign-up h1 {
-  width: 200px;
-  font-size: 30px;
-  color: white;
-  border: none;
-  margin: 0;
-}
-.sign-up {
-  text-align: center;
-  width: 200px;
-  margin-right: 0;
-  margin-left: 86px;
-}
-.submit-btn {
-  border: none;
-  outline: none;
-  color: white;
-  background-color: rgba(0, 0, 0, 0);
-  text-align: center;
-  font-size: 36px;
-  cursor: pointer;
-}
+  .form-section {
+  }
+  .form-section .container {
+    width: 600px;
+  }
+  .input__div p {
+    text-decoration: gray;
+    color: gray;
+    text-align: center;
+  }
+  .input__div {
+    padding-top: 20px;
+  }
+  .input__div h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
 
-.form-section {
-  display: flex;
-}
-.form-section .container {
-  width: 600px;
-}
-.input__div p {
-  text-decoration: gray;
-  color: gray;
-  text-align: center;
-}
-.input__div {
-  padding-top: 20px;
-}
-.input__div h3 {
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
+  /* Profile */
 
-/* Profile */
+  .profile-header {
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    width: 100%;
+    color: white;
+  }
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Profile-Info .container {
+    width: 80%;
+    height: 500px;
+    background-color: rgba(26, 26, 26, 0.966);
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+  }
+  .pfp {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    color: rgb(189, 189, 189);
+  }
+  .Info {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0f0ff6;
+    border-radius: 5px;
+    width: 500px;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .logout-btn {
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(255, 60, 76);
+  }
 
-.profile-header {
-  background-color: rgb(255, 255, 255);
-  height: 400px;
-  width: 100%;
-  color: white;
-}
-.head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.Profile-Info .container {
-  width: 80%;
-  height: 500px;
-  background-color: rgba(26, 26, 26, 0.966);
-  border-radius: 10px;
-  margin-top: 50px;
-  display: flex;
-}
-.pfp {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 20px;
-  color: rgb(189, 189, 189);
-}
-.Info {
-  font-size: 30px;
-  display: block;
-  background-color: #0f0f0ff6;
-  border-radius: 5px;
-  width: 500px;
-  height: 100%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-.logout-btn {
-  margin-top: 230px;
-  border: none;
-  padding: 10px;
-  font-size: 20px;
-  color: white;
-  background-color: rgb(255, 60, 76);
-}
+  /* Name componenet */
 
-/* Name componenet */
+  .name-alphabet-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Yourname-div {
+    text-align: center;
+  }
+  .input-name {
+    padding: 10px;
+    border-radius: 30px;
+    border: 3px solid rgb(219, 77, 120);
+    width: 500px;
+    outline: none;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .Yourname-div button {
+    position: absolute;
+    padding: 13px;
+    border-radius: 20px 0px 0px 20px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    top: 227px;
+    left: 300px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    border: 3px solid rgb(43, 41, 41);
+    cursor: pointer;
+  }
+  .card__desc {
+    color: white;
+    background-color: rgb(22, 22, 22);
+    padding: 15px;
+    font-size: 23px;
+  }
+  .card {
+    width: 148px;
+    margin-right: 150px;
+    border: 4px solid rgb(209, 26, 57);
+  }
+  .personal-info {
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+    border-radius: 10px;
+  }
+  .personal-info h6 {
+    padding: 20px;
+  }
 
-.name-alphabet-container {
-  margin-left: auto;
-  margin-right: auto;
-}
-.Yourname-div {
-  text-align: center;
-}
-.input-name {
-  padding: 10px;
-  border-radius: 30px;
-  border: 3px solid rgb(219, 77, 120);
-  width: 500px;
-  outline: none;
-  margin-top: 30px;
-  font-size: 25px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-.Yourname-div button {
-  position: absolute;
-  padding: 13px;
-  border-radius: 20px 0px 0px 20px;
-  background-color: black;
-  color: white;
-  width: 100px;
-  top: 227px;
-  left: 300px;
-  outline: none;
-  border: none;
-  font-size: 25px;
-  border: 3px solid rgb(43, 41, 41);
-  cursor: pointer;
-}
-.card__desc {
-  color: white;
-  background-color: rgb(22, 22, 22);
-  padding: 15px;
-  font-size: 23px;
-}
-.card {
-  width: 148px;
-  margin-right: 150px;
-  border: 4px solid rgb(209, 26, 57);
-}
-.personal-info {
-  background-color: rgb(10, 10, 10);
-  width: 100%;
-  border-radius: 10px;
-}
-.personal-info h6 {
-  padding: 20px;
-}
+  /* login */
 
-/* login */
+  .skewed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: #111111;
+    z-index: 0;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    box-shadow: 3px 3px 5px black;
+  }
 
-.skewed {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 500px;
-  background: #111111;
-  z-index: 0;
-  transform: skewY(-6deg);
-  transform-origin: top left;
-}
+  .login {
+    position: relative;
+    z-index: 10px;
+    display: flex;
+  }
+  .login img {
+    height: 400px;
+  }
+  .login-info {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    padding-top: 100px;
+    width: 100%;
+  }
 
-.login {
-  position: relative;
-  z-index: 10px;
-  display: flex;
+  .login-info h1 {
+    margin-top: 130px;
+    font-size: 30px;
+  }
+  .form-row {
+    display: flex;
+    padding-left: 30px;
+  }
+  .form-section #REGform {
+    width: 700px;
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+    margin: auto;
+    margin-top: 100px;
+    color: rgb(129, 129, 129);
+    margin-right: 40px;
+  }
+  .form-section .input__div {
+    padding-left: 20px;
+  }
+  .form-section #REGform .input__div input {
+    padding: 10px 10px 10px 110px;
+  }
+  .unregistered {
+    text-decoration: none;
+    padding: 10px;
+  }
 }
-.login img {
-  height: 400px;
-}
-.login-info {
-  display: flex;
-  color: white;
-  font-size: 30px;
-  padding-top: 100px;
-  width: 800px;
-}
+@media only screen and (max-width: 659px) {
+  #REGform {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+    color: rgb(129, 129, 129);
+  }
+  .container {
+    background-color: rgb(31, 31, 31);
+    padding: 40px;
+    margin: 40px;
+    width: 100%;
+    margin: auto;
+    border: 5px solid rgb(255, 77, 106);
+  }
+  #REGform input {
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+  }
+  .sign-up h1 {
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    border: none;
+    margin: 0;
+  }
+  .sign-up {
+    text-align: center;
+    width: 200px;
+    margin-right: 0;
+    margin-left: 86px;
+  }
+  .submit-btn {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    font-size: 36px;
+    cursor: pointer;
+  }
 
-.login-info h1 {
-  margin-top: 130px;
-  font-size: 30px;
+  .form-section {
+  }
+  .form-section .container {
+    width: 100%;
+  }
+  .input__div p {
+    text-decoration: gray;
+    color: gray;
+    text-align: center;
+  }
+  .input__div {
+    padding-top: 20px;
+  }
+  .input__div h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .login img {
+    width: 200px;
+  }
+  .login-info h1 {
+    font-size: 15px;
+    color: white;
+  }
+  .skewed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background: #111111;
+    z-index: -1;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    box-shadow: 3px 3px 5px black;
+  }
+  .login {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .login-info {
+    display: flex;
+    align-items: center;
+  }
+  .profile-header {
+    background-color: rgb(255, 255, 255);
+    height: 800px;
+    width: 100%;
+    color: white;
+  }
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Profile-Info .container {
+    width: 80%;
+    height: 500px;
+    background-color: rgba(26, 26, 26, 0.966);
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pfp {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    color: rgb(189, 189, 189);
+  }
+  .Info {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0f0ff6;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .logout-btn {
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(255, 60, 76);
+  }
+  .name-alphabet-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Yourname-div {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .input-name {
+    padding: 10px;
+    border-radius: 30px;
+    border: 3px solid rgb(219, 77, 120);
+    width: 100%;
+    outline: none;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .Yourname-div button {
+    position: absolute;
+    padding: 13px;
+    border-radius: 20px 0px 0px 20px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    top: 227px;
+    left: 300px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    border: 3px solid rgb(43, 41, 41);
+    cursor: pointer;
+  }
+  .card__desc {
+    color: white;
+    background-color: rgb(22, 22, 22);
+    padding: 15px;
+    font-size: 23px;
+  }
+  .card {
+    width: 148px;
+    margin-right: 150px;
+    border: 4px solid rgb(209, 26, 57);
+  }
+  .personal-info {
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+    border-radius: 10px;
+  }
+  .personal-info h6 {
+    padding: 20px;
+  }
 }
-.form-row {
-  display: flex;
-  padding-left: 30px;
-}
-.form-section #REGform {
-  width: 700px;
-  background-color: rgb(0, 0, 0);
-  padding: 40px;
-  margin: auto;
-  margin-top: 100px;
-  color: rgb(129, 129, 129);
-  margin-right: 40px;
-}
-.form-section .input__div {
-  padding-left: 20px;
-}
-.form-section #REGform .input__div input {
-  padding: 10px 10px 10px 110px;
-}
-.unregistered {
-  text-decoration: none;
-  padding: 10px;
+@media only screen and (min-width: 660px) and (max-width: 3060px) {
+  #REGform {
+    width: 480px;
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+    color: rgb(129, 129, 129);
+  }
+  .container {
+    background-color: rgb(31, 31, 31);
+    padding: 40px;
+    margin: 40px;
+    width: 370px;
+    margin: auto;
+    border: 5px solid rgb(255, 77, 106);
+  }
+  #REGform input {
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+  }
+  .sign-up h1 {
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    border: none;
+    margin: 0;
+  }
+  .sign-up {
+    text-align: center;
+    width: 200px;
+    margin-right: 0;
+    margin-left: 86px;
+  }
+  .submit-btn {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    font-size: 36px;
+    cursor: pointer;
+  }
+
+  .form-section .container {
+    width: 100%;
+  }
+  .input__div p {
+    text-decoration: gray;
+    color: gray;
+    text-align: center;
+  }
+  .input__div {
+    padding-top: 20px;
+  }
+  .input__div h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .login img {
+    width: 400px;
+  }
+  .login-info h1 {
+    font-size: 20px;
+    color: white;
+  }
+  .skewed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: #111111;
+    z-index: -1;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+  }
+  .login {
+    display: flex;
+  }
+
+  .profile-header {
+    background-color: rgb(255, 255, 255);
+    height: 800px;
+    width: 100%;
+    color: white;
+  }
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Profile-Info .container {
+    width: 80%;
+    height: 500px;
+    background-color: rgba(26, 26, 26, 0.966);
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pfp {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    color: rgb(189, 189, 189);
+  }
+  .Info {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0f0ff6;
+    border-radius: 5px;
+    width: 500px;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .logout-btn {
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(255, 60, 76);
+  }
+  .name-alphabet-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .Yourname-div {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .input-name {
+    padding: 10px;
+    border-radius: 30px;
+    border: 3px solid rgb(219, 77, 120);
+    width: 500px;
+    outline: none;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .Yourname-div button {
+    position: absolute;
+    padding: 13px;
+    border-radius: 20px 0px 0px 20px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    top: 227px;
+    left: 300px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    border: 3px solid rgb(43, 41, 41);
+    cursor: pointer;
+  }
+  .card__desc {
+    color: white;
+    background-color: rgb(22, 22, 22);
+    padding: 15px;
+    font-size: 23px;
+  }
+  .card {
+    width: 148px;
+    margin-right: 150px;
+    border: 4px solid rgb(209, 26, 57);
+  }
+  .personal-info {
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+    border-radius: 10px;
+  }
+  .personal-info h6 {
+    padding: 20px;
+  }
 }

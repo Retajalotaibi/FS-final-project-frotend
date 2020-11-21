@@ -2,114 +2,114 @@
   {
     "alphabet": "ا",
 
-    "image": "../alphabet/ا.png"
+    "image": "../images/alphabet/ا.png"
   },
   {
     "alphabet": "ب",
-    "image": "../alphabet/ب.png"
+    "image": "../images/alphabet/ب.png"
   },
   {
     "alphabet": "ت",
-    "image": "../alphabet/ت.png"
+    "image": "../images/alphabet/ت.png"
   },
   {
     "alphabet": "ث",
-    "image": "../alphabet/ث.png"
+    "image": "../images/alphabet/ث.png"
   },
   {
     "alphabet": "ج",
-    "image": "../alphabet/ج.png"
+    "image": "../images/alphabet/ج.png"
   },
   {
     "alphabet": "ح",
-    "image": "../alphabet/ح.png"
+    "image": "../images/alphabet/ح.png"
   },
   {
     "alphabet": "خ",
-    "image": "../alphabet/خ.png"
+    "image": "../images/alphabet/خ.png"
   },
   {
     "alphabet": "د",
-    "image": "../alphabet/د.png"
+    "image": "../images/alphabet/د.png"
   },
   {
     "alphabet": "ذ",
-    "image": "../alphabet/ذ.png"
+    "image": "../images/alphabet/ذ.png"
   },
   {
     "alphabet": "ر",
-    "image": "../alphabet/ر.png"
+    "image": "../images/alphabet/ر.png"
   },
   {
     "alphabet": "ز",
-    "image": "../alphabet/ز.png"
+    "image": "../images/alphabet/ز.png"
   },
   {
     "alphabet": "س",
-    "image": "../alphabet/س.png"
+    "image": "../images/alphabet/س.png"
   },
   {
     "alphabet": "ش",
-    "image": "../alphabet/ش.png"
+    "image": "../images/alphabet/ش.png"
   },
   {
     "alphabet": "ص",
-    "image": "../alphabet/ص.png"
+    "image": "../images/alphabet/ص.png"
   },
   {
     "alphabet": "ض",
-    "image": "../alphabet/ض.png"
+    "image": "../images/alphabet/ض.png"
   },
   {
     "alphabet": "ط",
-    "image": "../alphabet/ط.png"
+    "image": "../images/alphabet/ط.png"
   },
   {
     "alphabet": "ظ",
-    "image": "../alphabet/ظ.png"
+    "image": "../images/alphabet/ظ.png"
   },
   {
     "alphabet": "ع",
-    "image": "../alphabet/ع.png"
+    "image": "../images/alphabet/ع.png"
   },
   {
     "alphabet": "غ",
-    "image": "../alphabet/غ.png"
+    "image": "../images/alphabet/غ.png"
   },
   {
     "alphabet": "ف",
-    "image": "../alphabet/ف.png"
+    "image": "../images/alphabet/ف.png"
   },
   {
     "alphabet": "ق",
-    "image": "../alphabet/ق.png"
+    "image": "../images/alphabet/ق.png"
   },
   {
     "alphabet": "ك",
-    "image": "../alphabet/ك.png"
+    "image": "../images/alphabet/ك.png"
   },
   {
     "alphabet": "ل",
-    "image": "../alphabet/ل.png"
+    "image": "../images/alphabet/ل.png"
   },
   {
     "alphabet": "م",
-    "image": "../alphabet/م.png"
+    "image": "../images/alphabet/م.png"
   },
   {
     "alphabet": "ن",
-    "image": "../alphabet/ن.png"
+    "image": "../images/alphabet/ن.png"
   },
   {
     "alphabet": "ه",
-    "image": "../alphabet/ه.png"
+    "image": "../images/alphabet/ه.png"
   },
   {
     "alphabet": "و",
-    "image": "../alphabet/و.png"
+    "image": "../images/alphabet/و.png"
   },
   {
     "alphabet": "ي",
-    "image": "../alphabet/ي.png"
+    "image": "../images/alphabet/ي.png"
   }
 ]
