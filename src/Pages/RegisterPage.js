@@ -1,11 +1,14 @@
-import React from "react";
+import React, { Redirect } from "react";
 import Register from "../Components/Register";
 
 class RegisterPage extends React.Component {
   render() {
     return (
       <>
-        <Register />
+        <>
+          {this.props.user ? <Redirect to="/" /> : <Register {...this.props} />}{" "}
+        </>
+        ;
       </>
     );
   }

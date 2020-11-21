@@ -1,24 +1,23 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import * as userService from "../services/userService";
-import Loader from "react-loader-spinner"
+import * as authService from "../services/authServices";
+import Loader from "react-loader-spinner";
 
 class Register extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+  state = {
+    account: {
       username: "",
       email: "",
       password: "",
       number: "",
       city: "",
-      para:false
-    };
-  }
+    },
+    para: false,
+  };
   submit = async () => {
     this.setState({ para: true });
-    const { username, email, password, number, city } = this.state;
-
+    const { username, email, password, number, city } = this.state.account;
     const user = {
       username: username,
       email: email,
@@ -28,28 +27,32 @@ class Register extends React.Component {
     };
 
     try {
+      console.log("i run ");
       const resUser = await userService.register(user);
-    } catch (error) {
-      console.log(error);
+
+      const { data: jwt } = await authService.login(
+        this.state.account.email,
+        this.state.account.password
+      );
+
+      console.log(jwt);
+      localStorage.setItem("jwt", jwt);
+      window.location.reload();
+      return;
+    } catch (err) {
+      console.log(err.response);
+      alert(err.response.data);
     }
     this.setState({ para: false });
   };
 
-  handleChange = (event) => {
-    this.setState({
-      [event.target.name]: event.target.value,
-    });
+  handleChange = async ({ currentTarget: input }) => {
+    const account = { ...this.state.account };
+    account[input.name] = input.value;
+    await this.setState({ account });
   };
-
   render() {
-    const { email } = this.state;
-
-    const { username } = this.state;
-
-    const { password } = this.state;
-    const { city } = this.state;
-
-    const { number } = this.state;
+    const { email, username, password, city, number } = this.state.account;
     return (
       <>
         {" "}
@@ -125,13 +128,17 @@ class Register extends React.Component {
                 </div>
                 <div onClick={this.submit} className="submit-btn">
                   <h4>انشاء</h4>
-                  {this.state.para ? <Loader
-                    type="ThreeDots"
-                    color="#FF69B4"
-                    height={50}
-                    width={50}
-                    timeout={3000}
-                  /> : ""}
+                  {this.state.para ? (
+                    <Loader
+                      type="ThreeDots"
+                      color="#FF69B4"
+                      height={50}
+                      width={50}
+                      timeout={3000}
+                    />
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
             </legend>

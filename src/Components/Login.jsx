@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import * as userService from "../services/authServices";
-import Loader  from "react-loader-spinner"
+import Loader from "react-loader-spinner";
 
 class Login extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class Login extends React.Component {
         email: "",
         password: "",
       },
-      para: false
+      para: false,
     };
   }
   handleChange = (event) => {
@@ -84,14 +84,15 @@ class Login extends React.Component {
   LogingIn = async (e) => {
     this.setState({ para: true });
     try {
-      const { data: jwt } = await userService.login(
+      const res = await userService.login(
         this.state.email,
         this.state.password
       );
       window.location.reload();
-      localStorage.setItem("jwt", jwt);
-    } catch (error) {
-      console.log(error);
+      localStorage.setItem("jwt", res.data);
+    } catch (err) {
+      console.log(err.response);
+      alert(err.response.data);
     }
     this.setState({ para: false });
   };
