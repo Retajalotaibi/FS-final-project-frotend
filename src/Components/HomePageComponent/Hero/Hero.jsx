@@ -13,9 +13,6 @@ const Hero = () => {
             لغة الإشارة هي أنبل هدية أعطاها الله للصم
           </h2>
           <p className="hero-paragraph">لغتنا لا تختلف</p>
-          <NavLink to="/register" className="signup-button hide">
-            إنشاء حساب
-          </NavLink>
         </div>
         <div className="bottom left">
           <NavLink to="/register" className="signup-button show">

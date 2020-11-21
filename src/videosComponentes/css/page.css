@@ -1,11 +1,11 @@
-.videoPage-container {
-  display: flex;
-  justify-content: space-between;
-}
-@media only screen and (min-width: 768px) and (max-width: 2000px) {
+@media only screen and (min-width: 1000px) and (max-width: 2000px) {
   /* body {
     background-color: wheat;
   } */
+  .videoPage-container {
+    display: flex;
+    justify-content: space-between;
+  }
   .player-container {
     padding-left: 50px;
     padding-top: 100px;

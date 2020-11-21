@@ -20,16 +20,8 @@ class ProfileSideBar extends Component {
         <div className="profile-container">
           <img src="./images/profile.png" width={80} />
           <h4>{this.props.user.username}</h4>
-          <div className="cards-container">
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-          </div>
+          <div className="cards-container"></div>
         </div>
-        {/* <div className="progress-items-container">
-          <h2>تطورك في هذا الكورس</h2>
-          <ProgressCounter done={this.donePercent()} />
-        </div> */}
       </div>
     );
   }
