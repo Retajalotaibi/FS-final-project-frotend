@@ -1,7 +1,7 @@
 import http from "./httpServices.js";
 
 export function register(user) {
-  const URL = "https://jzrr-project.herokuapp.com/register";
+  const URL = "https://talent2.herokuapp.com/api/v1/register";
   return http.post(URL, {
     username: user.username,
     email: user.email,
