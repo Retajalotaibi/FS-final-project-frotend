@@ -20,7 +20,7 @@ class App extends React.Component {
       "jwt"
     );
     axios
-      .get("http://localhost:4000/")
+      .get("https://jzrr-project.herokuapp.com/")
       .then((res) => {
         if (res.data.user !== "you dont have permission") {
           this.setState({

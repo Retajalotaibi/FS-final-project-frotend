@@ -27,7 +27,7 @@ class Register extends React.Component {
     };
 
     try {
-      console.log("i run ");
+      console.log(city, "city");
       const resUser = await userService.register(user);
 
       const { data: jwt } = await authService.login(
